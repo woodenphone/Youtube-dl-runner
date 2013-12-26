@@ -23,7 +23,7 @@ ignore_errors = "-i"
 safe_filenames = "--restrict-filenames"
 output_arg = "-o"
 output_template = "%(uploader)s\%(playlist)s\%(title)s-%(id)s.%(ext)s"
-target_url = "https://www.youtube.com/playlist?list=PL-XXv-cvA_iBTE0TyTr1MXaoihYpqPhwc"
+target_url = raw_input("Enter target URL")
 
 command = [program_name, ignore_errors, safe_filenames, output_arg, output_template, target_url]
 result = subprocess.call(command)
